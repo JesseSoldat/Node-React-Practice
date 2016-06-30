@@ -5,7 +5,7 @@ var Header = React.createClass({
 		return(
 			<header>
 				<h1>{this.props.title}</h1>
-				<div>{this.props.status}</div>
+				<div id="connection-status" className={this.props.status}></div>
 			</header>
 			);
 	}

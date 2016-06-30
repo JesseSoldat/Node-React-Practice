@@ -49,7 +49,10 @@ var APP = React.createClass({
 						Speaker</Link>
 					</li>
 				</ul>
-
+				{React.cloneElement(this.props.children, {
+					title: this.state.title,
+					status: this.state.status
+				})}
 
 			</div>
 			)
